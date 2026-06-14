@@ -1,5 +1,4 @@
 import streamlit as st
-from st_copy_to_clipboard import st_copy_to_clipboard
 import csv
 
 #browser title
@@ -164,8 +163,3 @@ st.text_area(
     height=300
 )
 
-if shopping_text.strip():
-    st_copy_to_clipboard(
-        shopping_text,
-        "📋 Copy All"
-    )
